@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🏴‍☠️ One Piece Minecraft PvP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>🏴‍☠️ One Piece Minecraft PvP</h1>
+    <nav>
+      <button id="homeButton">Home</button>
+      <button id="leaderboardButton">Leaderboard</button>
+    </nav>
+  </div>
+
+  <div id="content">
+    <div id="home">
+      <h2>Leaderboard</h2>
+      <div id="leaderboard">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Username</th><th>ELO</th></tr>
+          </thead>
+          <tbody id="leaderboard-body"></tbody>
+        </table>
+      </div>
+
+      <div id="auth-panel">
+        <h2>Register / Login</h2>
+        <input type="text" id="mcname" placeholder="Minecraft Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="registerButton">Register</button>
+        <button id="loginButton">Login</button>
+      </div>
+    </div>
+
+    <div id="submit-video" style="display:none;">
+      <h2>Submit Video</h2>
+      <input type="file" id="videoInput" accept="video/mp4" required>
+      <button id="uploadVideoButton">Upload Video</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
